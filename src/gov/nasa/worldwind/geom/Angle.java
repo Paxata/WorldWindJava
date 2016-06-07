@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 United States Government as represented by the Administrator ofothe
+ * Copyright (C) 2012 United States Government as represented by the Administrator of the
  * National Aeronautics and Space Administration.
  * All Rights Reserved.
  */
@@ -207,7 +207,7 @@ public class Angle implements Comparable<Angle>
             throw new IllegalArgumentException(message);
         }
         // Replace degree, min and sec signs with space
-        dmsString = dmsString.replaceAll("[D|d|\u00B0|'|\u2019|\"|\u201d]", " ");
+        dmsString = dmsString.replaceAll("[D|d|\u00B0|'|\u2019|\u2032|\"|\u201d|\u2033]", " ");
         // Replace multiple spaces with single ones
         dmsString = dmsString.replaceAll("\\s+", " ");
         dmsString = dmsString.trim();

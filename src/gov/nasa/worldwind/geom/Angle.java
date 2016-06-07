@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 United States Government as represented by the Administrator of the
+ * Copyright (C) 2012 United States Government as represented by the Administrator ofothe
  * National Aeronautics and Space Administration.
  * All Rights Reserved.
  */
@@ -196,8 +196,8 @@ public class Angle implements Comparable<Angle>
             throw new IllegalArgumentException(message);
         }
         // Check for string format validity
-        String regex = "([-|\\+]?\\d{1,3}[d|D|\u00B0|\\s](\\s*\\d{1,2}['|\u2019|\\s])?"
-            + "(\\s*\\d{1,2}[\"|\u201d|\\s])?\\s*([N|n|S|s|E|e|W|w])?\\s?)";
+        String regex = "([-|\\+]?\\d{1,3}[d|D|\u00B0|\\s](\\s*\\d{1,2}['|\u2019|\u2032|\\s])?"
+            + "(\\s*\\d{1,2}[\"|\u201d|\u2033|\\s])?\\s*([N|n|S|s|E|e|W|w])?\\s?)";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(dmsString + " ");
         if (!matcher.matches())

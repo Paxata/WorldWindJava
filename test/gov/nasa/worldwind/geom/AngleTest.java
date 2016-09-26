@@ -9,10 +9,6 @@ import junit.framework.*;
 import junit.textui.TestRunner;
 import org.junit.*;
 
-
-/**
- * @author tomwang-paxata
- */
 public class AngleTest
 {
     public static class Tests extends TestCase

@@ -275,6 +275,7 @@ class MGRSCoordConverter
             {
                 latitude = UPS.getLatitude().radians;
                 longitude = UPS.getLongitude().radians;
+                error_code = MGRS_NO_ERROR;
             }
             else
                 error_code = MGRS_UPS_ERROR;
@@ -333,7 +334,7 @@ class MGRSCoordConverter
                     error_code |= MGRS_STRING_ERROR;
             }
             else
-                error_code |= MGRS_STRING_ERROR;
+                zone = 0;
         j = i;
 
         while (i < MGRSString.length() && Character.isLetter(MGRSString.charAt(i)))

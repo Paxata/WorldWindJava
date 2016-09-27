@@ -15,9 +15,7 @@ public class MGRSCoordTest
     public static class MGRSCoordConverterTest extends TestCase
     {
        public void testPolar() {
-           Angle lat = Angle.fromDegrees(88), lon = Angle.fromDegrees(120);
-
-           MGRSCoord expectedMGRS = MGRSCoord.fromLatLon(lat, lon);
+           MGRSCoord expectedMGRS = MGRSCoord.fromLatLon(Angle.fromDegrees(88), Angle.fromDegrees(120));
            MGRSCoord actualMGRS = MGRSCoord.fromString(expectedMGRS.toString(), new Earth());
 
            // Unfortunately MGRSCoord does not implement equals

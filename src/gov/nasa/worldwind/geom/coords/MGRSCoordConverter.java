@@ -1103,7 +1103,7 @@ class MGRSCoordConverter
             {
                 hemisphere = AVKey.SOUTH;
 
-                ltr2_low_value = upsConstants[mgrs.latitudeBand][12]; //.ltr2_low_value;
+                ltr2_low_value = upsConstants[mgrs.latitudeBand][1]; //.ltr2_low_value;
                 ltr2_high_value = upsConstants[mgrs.latitudeBand][2]; //.ltr2_high_value;
                 ltr3_high_value = upsConstants[mgrs.latitudeBand][3]; //.ltr3_high_value;
                 false_easting = upsConstants[mgrs.latitudeBand][4]; //.false_easting;
